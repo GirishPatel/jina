@@ -5,13 +5,13 @@ from typing import Iterable
 
 import numpy as np
 
-from . import BaseExecutableDriver, FastRecursiveMixin
+from . import BaseExecutableDriver, FlatRecursiveMixin
 
 if False:
     from ..types.sets import DocumentSet
 
 
-class BaseIndexDriver(FastRecursiveMixin, BaseExecutableDriver):
+class BaseIndexDriver(FlatRecursiveMixin, BaseExecutableDriver):
     """Drivers inherited from this Driver will bind :meth:`add` by default """
 
     def __init__(self, executor: str = None, method: str = 'add', *args, **kwargs):
