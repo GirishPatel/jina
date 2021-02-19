@@ -341,13 +341,8 @@ class ContextAwareRecursiveMixin:
 
 class FlatRecursiveMixin:
     """
-<<<<<<< HEAD
     The optimized version of :class:`RecursiveMixin`, to be mixed in with :class:`BaseRecursiveDriver`
     it uses :meth:`traverse` in :class:`DocumentSet` and yield much better performance for index and encode drivers.
-=======
-     The batch optimized version of :class:`ContextAwareRecursiveMixin`, to be mixed in with :class:`BaseRecursiveDriver`
-     it uses :meth:`traverse` in :class:`DocumentSet` and yield much better performance for index and encode drivers.
->>>>>>> refactor: completely removed recursivemixin
 
     .. seealso::
        https://github.com/jina-ai/jina/issues/1932
